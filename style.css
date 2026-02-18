@@ -1,0 +1,773 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  background: #f1f1f1;
+}
+
+/* Header */
+.header {
+  background:  linear-gradient(135deg, #064E3B, #14B8A6);
+  color: white;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.logo {
+  border: 2px solid white;
+  border-radius: 35%;
+  padding: 8px 12px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.header p{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.back {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+/* Sections */
+.section {
+  padding: 20px;
+}
+
+.section h2 {
+  margin-bottom: 16px;
+  color: #064E3B;
+  text-align: center;
+}
+
+.wallet {
+  background: white;
+  margin: 16px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.28);
+}
+
+.wallet p {
+  color: gray;
+  font-size: 14px;
+}
+
+.wallet h1 {
+  margin: 10px 0;
+  color: #064E3B;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 8px 8px;
+  border: 2px solid #064E3B;
+  color: #064E3B;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn-outline:hover {
+  background: #064E3B;
+  color: #fff;
+}
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 0 16px;
+  margin-bottom: 20px;
+}
+
+.action-card {
+  background: white;
+  padding: 8px 8px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.28);
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.action-card span {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.action-card p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.action-card:hover {
+  transform: translateY(-9px);
+}
+
+.action-card:active {
+  transform: scale(1.1);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.service-card {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.28);
+  transition: 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-9px);
+}
+
+.service-card:active {
+  transform: scale(1.1);
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.dat{
+  font-size: 18px;
+  color: #14B8A6;
+}
+
+.day{
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.deals {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.deal-card {
+  min-width: 130px;
+  background: white;
+  padding: 12px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+  transition: 0.7s;
+}
+
+.deal-card h4 {
+  margin-bottom: 6px;
+}
+
+.deal-card p {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.deal-card small {
+  color: gray;
+}
+
+/* Hover / tap */
+.deal-card:hover {
+  transform: translateY(-9px);
+}
+
+.deal-card:active {
+  transform: scale(1.1);
+}
+
+/* Network accents */
+.mtn { border-left: 5px solid #ffcc00; }
+.airtel { border-left: 5px solid #e60000; }
+.glo { border-left: 5px solid #0f9d58; }
+.mobile9 { border-left: 5px solid #006400; }
+
+
+/* Beneficiaries */
+.beneficiaries {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.beneficiary-card {
+  min-width: 200px;
+  background: white;
+  padding: 14px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.beneficiary-card:hover {
+  transform: translateY(-9px);
+}
+
+.beneficiary-card:active {
+  transform: scale(0.99);
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  background: #14B8A6;
+  color: white;
+  border-radius: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.info p {
+  font-size: 13px;
+  color: gray;
+}
+
+/* Transactions */
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.transaction {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.28);
+  transition: 0.2s;
+}
+
+.transaction:hover {
+  transform: translateY(-9px);
+}
+
+.transaction p {
+  font-size: 13px;
+  color: gray;
+}
+
+.amount {
+  font-weight: bold;
+  display: block;
+  text-align: right;
+}
+
+.status {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+/* Status colors */
+.transaction.success .status {
+  background: #e6f7ee;
+  color: #0f9d58;
+}
+
+.transaction.pending .status {
+  background: #fff6e0;
+  color: #f4a100;
+}
+
+.transaction.failed .status {
+  background: #fdeaea;
+  color: #d93025;
+}
+
+.time {
+  font-size: 12px;
+  color: #888;
+  display: block;
+  margin-top: 4px;
+}
+
+.search-bar {
+  width: calc(100% - 32px); /* full width minus padding */
+  padding: 16px 16px;
+  margin: 0 16px 12px 16px;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: #064E3B;
+  box-shadow: 0 4px 12px rgba(0, 100, 0, 0.5);
+}
+
+
+/* Recent Contacts */
+.recent-contacts {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.contact-card {
+  min-width: 120px;
+  background: white;
+  padding: 12px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.contact-card strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.contact-card p {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Hover / tap */
+.contact-card:hover {
+  transform: translateY(-3px);
+}
+
+.contact-card:active {
+  transform: scale(0.95);
+}
+
+/* Promo Banner */
+.promo {
+  margin: 16px;
+  padding: 15px;
+  background: yellow;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.promo-content h3 {
+  margin-bottom: 6px;
+}
+
+.promo-content p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.promo-btn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.promo-btn:hover {
+  transform: translateY(-2px);
+}
+
+.promo-btn:active {
+  transform: scale(0.95);
+}
+
+.promo2 {
+  margin: 16px;
+  padding: 15px;
+  background: red;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.promo-content2 h3 {
+  margin-bottom: 6px;
+}
+
+.promo-content2 p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.promo-btn2 {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.promo-btn2:hover {
+  transform: translateY(-2px);
+}
+
+.promo-btn2:active {
+  transform: scale(0.95);
+}
+
+/* Footer */
+.footer {
+    background: #064E3B;
+  color: white;
+  padding: 30px 16px;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 30px;
+}
+
+.footer h3 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  padding-bottom: 0.5rem;
+}
+
+.footer p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.footer-links {
+  margin: 12px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #0f9d58;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.7s;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: none;
+}
+
+.footer-contact{
+  padding-bottom: 0.2rem;
+}
+
+.footer-legal {
+  margin-top: 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6ff;
+}
+
+/* Fund Wallet Section */
+.fund-wallet {
+  padding: 20px;
+  text-align: center;
+}
+
+.fund-wallet h2 {
+  margin-bottom: 6px;
+  color: #064E3B;
+}
+
+.hint {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+/* Account Card */
+.account-card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.28);
+}
+
+.account-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.account-row:last-child {
+  border-bottom: none;
+}
+
+.account-row span {
+  color: #777;
+  font-size: 14px;
+}
+
+.account-row strong {
+  font-size: 15px;
+}
+
+/* Notice */
+.notice {
+  margin-top: 16px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: #333;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.28);
+}
+
+.page-header {
+  text-align: center;
+  padding: 20px;
+  color: #064E3B;
+}
+
+.page-header p {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.plan-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.plan-card:hover {
+  transform: translateY(-6px);
+}
+
+.plan-card img {
+  width: 48px;
+  margin-bottom: 10px;
+}
+
+.plan-card h4 {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.plan-card p {
+  font-size: 13px;
+  color: #555;
+}
+
+.support-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.support-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.28);
+  transition: 0.7s;
+}
+
+.support-card:hover {
+  transform: translateY(-9px);
+}
+
+.contact-section {
+  padding: 16px;
+}
+
+.contact-section h2{
+  text-align: center;
+  color: #064E3B;
+  padding-bottom: 1rem;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.28);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  background: #064E3B;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.redirect-text{
+  padding-top: 1rem;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.faq-section {
+  padding: 16px;
+}
+
+.faq-item {
+  background: #fff;
+  padding: 14px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.28);
+}
+
+.faq-item p{
+  color: #064E3B;
+  font-weight: bold;
+}
+
+.redirect-text {
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.redirect-text a {
+  color: #14B8A6;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Cable Awareness Section */
+.cable-awareness {
+  padding: 14px;
+}
+
+.cable-awareness h2 {
+  margin-bottom: 4px;
+  text-align: center;
+  color: #064E3B;
+  font-size: 1.5rem;
+}
+
+.muted {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.cable-providers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.cable-card {
+  background: #fff;
+  padding: 14px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.28);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.cable-card img {
+  width: 70px;
+  margin-bottom: 8px;
+}
+
+.cable-card span {
+  font-size: 16px;
+}
+
+.cable-card:hover {
+  transform: translateY(-9px);
+}
+
+/* Coming Soon Effect */
+.coming-soon {
+  opacity: 0.9;
+}
+
+.coming-soon-btn {
+  width: 90%;
+  margin: 15px auto;
+  display: block;
+  padding: 14px 18px;
+  background: linear-gradient(135deg, #16c2a3, #064E3B);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: not-allowed;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.28);
+}
