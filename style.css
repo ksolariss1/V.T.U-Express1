@@ -23,15 +23,15 @@ body {
   font-weight: bold;
   white-space: nowrap;
   border: 2px solid white;
-  border-radius: 15px;
-  padding: 6px 1
+  border-radius: 30px;
+  padding: 10px 10px
 }
 
 .user {
   font-size: 13px;      /* smaller */
   white-space: nowrap;
   font-style: italic;
-  font-weight: normal;  /* not competing */
+  font-weight: bold;  /* not competing */
   opacity: 0.9;
     }
 
