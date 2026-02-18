@@ -9,15 +9,25 @@ body {
   background: #f1f1f1;
 }
 
-/* Header */
 .header {
-  background:  linear-gradient(135deg, #064E3B, #14B8A6);
-  color: white;
-  padding: 8px;
   display: flex;
   align-items: center;
-  gap: 60px;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: linear-gradient(to right, #0f766e, #16a34a);
+  color: white;
 }
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.user {
+  font-size: 14px;
+  white-space: nowrap;
+    }
 
 .logo {
   border: 2px solid white;
