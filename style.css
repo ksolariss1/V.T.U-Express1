@@ -13,7 +13,6 @@ body {
   display: flex;
   background:  linear-gradient(135deg, #064E3B, #14B8A6);
   color: white;
-  align-items: center;
   justify-content: space-between;
   padding: 15px;
   }
