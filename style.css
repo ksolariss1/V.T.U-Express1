@@ -13,7 +13,7 @@ body {
 .header {
   background:  linear-gradient(135deg, #064E3B, #14B8A6);
   color: white;
-  padding: 14px;
+  padding: 12px;
   display: flex;
   align-items: center;
   gap: 60px;
@@ -22,7 +22,7 @@ body {
 .logo {
   border: 2px solid white;
   border-radius: 35%;
-  padding: 8px 12px;
+  padding: 8px 10px;
   font-weight: bold;
   font-size: 15px;
 }
