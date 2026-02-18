@@ -22,25 +22,21 @@ body {
   font-size: 18px;
   font-weight: bold;
   white-space: nowrap;
-}
-
-.user {
-  font-size: 14px;
-  white-space: nowrap;
-    }
-
-.logo {
   border: 2px solid white;
   border-radius: 35%;
   padding: 8px 10px;
   font-weight: bold;
-  font-size: 15px;
 }
 
-.header p{
-    font-style: italic;
-    font-weight: bold;
-    font-size: 15px;
+.user {
+  font-size: 15px;
+  white-space: nowrap;
+  font-style: italic;
+  font-weight: bold;
+    }
+
+.logo {
+  
 }
 
 .back {
